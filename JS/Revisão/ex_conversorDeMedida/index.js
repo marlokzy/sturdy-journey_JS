@@ -31,3 +31,5 @@ switch(opcaoMedida){
         alert("Opção Inválida!");
         break;
 }
+
+// testando sincronização git e vscode
