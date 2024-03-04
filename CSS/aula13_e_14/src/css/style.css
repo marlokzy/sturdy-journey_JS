@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar&family=Montserrat&display=swap'); /* adicionei a fonte Geostar e a Montserrat */
+
+p{
+  font-family: 'Montserrat', sans-serif; /* define o estilo da fonte */
+  line-height: 1.5; /* controla o espaço entre as linhas  */
+}
+
+span {
+    font-weight: 700; /* controla a intensidade do negrito */
+    font-size: 25px; /* controla o tamanho da fonte */
+    text-decoration: underline;  /* controla a decoração no texto */
+}
+h1{
+  text-align: center; /* controla o alinhamento do texto */
+  font-family: 'Geostar', cursive; 
+}

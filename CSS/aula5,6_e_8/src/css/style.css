@@ -1,0 +1,46 @@
+/*     *{
+          (esse é o seletor universal, seleciona todos os elementos da página)
+           }                                                                      */
+
+li a{
+  color: pink;
+}
+
+ li>a{  /* todos a que forem filhos de li - seletor de descendencia */
+  color:red;
+}
+
+ h1 + h4{  /*todos h4 que vier logo dps de um h1 - seletor adjacente */
+  border: 4px dotted black;
+}
+
+ a[href="/bla"]{  /* busca em todos a os que tiverem o href="/bla" - seletor de atributo */
+  color: orange;
+}
+
+ li:nth-of-type(2){ /* colocar a cor purple em todos li que ficam em 2 da lista - pseudoclasses */
+  color: purple;
+}
+
+h1{
+  color: purple;
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: yellow; */
+
+  border: 2px solid yellow;
+}
+
+body {
+  background-image: url(../img/falcon9.jpg);
+  background-repeat: no-repeat; /*para evitar que o background se repita varias vezes */
+   background-size: cover; /* para deixar o background no meio e estático sem se mexer */
+}
+
+.text-yellow{
+  color: yellow;
+}
+
+#red{
+  color: red;
+}
