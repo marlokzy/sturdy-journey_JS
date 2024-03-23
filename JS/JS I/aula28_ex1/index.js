@@ -1,5 +1,5 @@
 do {
-    let option = parseFloat(prompt("Escolha uma das opções:\n1- .\n2 - ..\n3 - ...\n4 - ....\n5 - encerrar programa"));
+    const option = parseFloat(prompt("Escolha uma das opções:\n1- .\n2 - ..\n3 - ...\n4 - ....\n5 - encerrar programa"));
 
     switch(option){
         case 1:
@@ -18,8 +18,6 @@ do {
             alert("a opção escolhida foi a 5");
             break
     }
-} while(option !== 5 );
-
-alert("a opção escolhida foi a 5");
+} while(option !== 5);
 
 alert("O sistema está sendo encerrado!!!");
