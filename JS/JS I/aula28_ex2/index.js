@@ -1,11 +1,10 @@
-// let money = parseFloat("");
 let option = "";
 
 let money = parseFloat(prompt("Qual é a quantidade de dinheiro disponivel?"));
 
 do {
     
-    option = prompt("Saldo: "+money+"\n1 - Adicionar dinheiro\n2 - Remover dinheiro\n3 - Sair");
+    option = prompt("Saldo: R$ "+money+"\n1 - Adicionar dinheiro\n2 - Remover dinheiro\n3 - Sair");
 
     switch (option) {
         case "1":
@@ -23,6 +22,7 @@ do {
             break;
         
         default:
+            alert("Opção Inválida!!!")
             break;
     }
 
