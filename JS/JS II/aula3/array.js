@@ -59,12 +59,28 @@ const hobbits = array.slice(0, 4); // vai cortar os elementos presentes da posi�
 console.log(array);
 console.log(hobbits); // vai exibir quais foram os elementos que foram cortados 
 
-/* --> mais exemplos com slice
+// mais exemplos com slice
 const outros = array.slice(-4); // colocando valor negativo ele pegará os elementos de forma inversa (do final para o começo), ou seja, o ultimo elemento do array será como o -1 do array
 console.log(hobbits); // vai exibir quais foram os elementos que foram cortados anteriormente (que no caso foi os 4 primeiros)
 console.log(outros); // vai exibir quais foram os elementos que foram cortados (que no caso foi os 4 ultimos)
-*/
 
 // concat -> concatenar
+const sociedade = hobbits.concat(outros, "Boromir"); // concatenou o array hobbits com o array outros e adicionou o elemento "Boromir" graças a função .concat e armazenou tudo na variavel sociedade
+console.log(sociedade);
 
+// Substituição dos Elementos
+// splice -> serve para remover um grupo de elemetos do array e substituir esse grupo por outros elementos
+// const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf, o Cinzento"); // essa função vai pegar apartir da variavel indice que está referente no assunto sobre o indexOf(que é 4), e apartir do quatro vai excluir 1 elemento e substituir por "Gandalf, o Cinzento" como solicitei e armazenar na variavel sociedade
+// console.log(sociedade);
+// console.log(elementosRemovidos); // como armazenei tudo na variavel elementosRemovidos, aqui ele vai printar qual foi o elementos que foi removido 
 
+// mais exemplos com splice
+const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf, o Cinzento", 1, 3, false, true); 
+console.log(sociedade);
+console.log(elementosRemovidos); 
+
+// Iterar sobre os Elementos -> fazer a repetição percorrendo cada um dos elementos do array
+for (let indice = 0; indice < sociedade.length; indice++) {
+    const elemento = sociedade[indice];
+    console.log(elemento + " se encontra na posição "+indice);
+} // Usando o for para percorrer cada elemento do array
